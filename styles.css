@@ -49,15 +49,142 @@ div.about {
   height: 300px;
   width: auto;
   background-color: #f5f5f5;
-  margin: 0 50px;
+  margin: 0 70px;
   display: grid;
-  grid-template-columns: 30% 70%;
+  padding: 30px;
+  grid-template-columns: 50% 50%;
+  /* text-align: center; */
+  word-wrap: break-word;
+}
+div.profile{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  padding: 50px;
+}
+div.content{
+  padding: 0 10px;
+}
+img.img{
+  width: 150px;
+  border-radius: 50%;
+
+}
+div.img{
+  height: 170px;
+  text-align: center;
+  /* background-color: green; */
+}
+h4.aboutme:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 60px; /* Change this to whatever width you want. */
+  padding-top: 8px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #2cacd5; /* This creates the border. Replace black with whatever color you want. */
+}
+h4.aboutme{
+  text-align: center;
+  margin-bottom: 30px;
+margin-left: 0;}
+span{
+  font-weight:bold;
+}
+#top{
+  height: 1px;
+}
+
+p.para{
+  vertical-align:left!important;
+  line-height: 30px;
+}
+div.details{
+margin-left: 20px; 
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+/* ................................skills.................................... */
+div.skils{
+height: 300px;
+width: 100%;
+margin: 30px 0 ;
+padding: 0 70px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.profileimage{
+  height: 170px;
+  background-color: #6F80D7;
+}
+.card{
+  display: inline-block!important;
+  max-width: 18rem;
+  max-height: 18rem;
+  text-align: center!important;
+}
+.card-body{
+  padding-bottom: 10px;
+}
+.first_column{
+  text-align: center!important;
+}
+.card-body-img{
   text-align: center;
 }
-img {
-  width: 150px;
-  border: solid 2px white;
-  background-color: #5b6fd1;
+.card-text{
+line-height: 22px;}
+img.skillist{
+height: 150px;
+text-align: center;
+}
+img.skillist2{
+  width: 200px;
+  height: 120px;
+  margin: 15px 0 10 0;
+}
+img.skillist3{
+  width: 100px;
+  height: 100px;
+  margin: 15px 0 10 0;
+}
+.skildiv{
   margin-top: 20px;
-  margin-left: 20px;
+}
+
+@media (max-width:995px){
+ 
+  .home {
+    height: 180px;
+    width: 100%;
+    text-align: center;
+  }
+  div.about{
+    height: 650px;
+    margin: 0px;
+    padding-left: 10;
+    padding-right: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 300px;
+  }
+  div.profile{
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 1fr;
+  }
+  h4.aboutme{
+    margin-bottom: 20px;
+  }
+  p.para{
+    line-height: 25px;
+  }
+  div.profile{
+    height: 400px;
+    padding: 10px!important;
+  }
+  div.skils{
+    padding: 0 10px;
+    grid-template-columns:100%;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  
 }
