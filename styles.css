@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #313b47;
+}
+
+/* .fix{
+    position: fixed!important;
+    top: 0!important;
+    width: 100%!important;
+} */
+.navbar-collapse {
+ 
+  flex-grow: 0 !important;
+}
+.nav-item {
+  margin-right: 30px !important;
+}
+h4 {
+  margin-left: 50px;
+}
+/* ................................Home.................................... */
+.home {
+  height: 250px;
+  width: 100%;
+  text-align: center;
+}
+h1.intro {
+  margin-top: 150px !important;
+}
+h1:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 100px; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #2cacd5; /* This creates the border. Replace black with whatever color you want. */
+}
+h4.role {
+  display: inline-block;
+  margin: 0 !important;
+  font-size: 1.2rem;
+}
+/* ................................About.................................... */
+
+div.about {
+  height: 300px;
+  width: auto;
+  background-color: #f5f5f5;
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+}
+img {
+  width: 150px;
+  border: solid 2px white;
+  background-color: #5b6fd1;
+  margin-top: 20px;
+  margin-left: 20px;
+}
