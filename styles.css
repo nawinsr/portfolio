@@ -1,18 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
 }
 h1 {
   color: #313b47;
 }
 
-/* .fix{
-    position: fixed!important;
-    top: 0!important;
-    width: 100%!important;
-} */
 .navbar-collapse {
- 
   flex-grow: 0 !important;
 }
 .nav-item {
@@ -21,6 +19,7 @@ h1 {
 h4 {
   margin-left: 50px;
 }
+
 /* ................................Home.................................... */
 .home {
   height: 250px;
@@ -56,20 +55,19 @@ div.about {
   /* text-align: center; */
   word-wrap: break-word;
 }
-div.profile{
+div.profile {
   display: grid;
   grid-template-columns: 160px 1fr;
   padding: 50px;
 }
-div.content{
+div.contents {
   padding: 0 10px;
 }
-img.img{
+img.img {
   width: 150px;
   border-radius: 50%;
-
 }
-div.img{
+div.img {
   height: 170px;
   text-align: center;
   /* background-color: green; */
@@ -82,83 +80,167 @@ h4.aboutme:after {
   padding-top: 8px; /* This creates some space between the element and the border. */
   border-bottom: 2px solid #2cacd5; /* This creates the border. Replace black with whatever color you want. */
 }
-h4.aboutme{
+h4.aboutme {
   text-align: center;
   margin-bottom: 30px;
-margin-left: 0;}
-span{
-  font-weight:bold;
+  margin-left: 0;
 }
-#top{
+span {
+  font-weight: bold;
+}
+#top {
   height: 1px;
 }
 
-p.para{
-  vertical-align:left!important;
+p.para {
+  vertical-align: left !important;
   line-height: 30px;
 }
-div.details{
-margin-left: 20px; 
- margin-top: 20px;
- margin-bottom: 20px;
+div.details {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* ................................skills.................................... */
-div.skils{
-height: 300px;
-width: 100%;
-margin: 30px 0 ;
-padding: 0 70px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+div.skills {
+  margin: 0 70px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  text-align: center !important;
 }
-.profileimage{
-  height: 170px;
-  background-color: #6F80D7;
-}
-.card{
-  display: inline-block!important;
+.card {
+  display: inline-block !important;
   max-width: 18rem;
   max-height: 18rem;
-  text-align: center!important;
+  text-align: center !important;
 }
-.card-body{
-  padding-bottom: 10px;
-}
-.first_column{
-  text-align: center!important;
-}
-.card-body-img{
+.card-body-img {
   text-align: center;
 }
-.card-text{
-line-height: 22px;}
-img.skillist{
-height: 150px;
-text-align: center;
+.card-text {
+  line-height: 22px;
 }
-img.skillist2{
+
+img.skillist {
+  height: 150px;
+  text-align: center;
+}
+img.skillist2 {
   width: 200px;
   height: 120px;
   margin: 15px 0 10 0;
 }
-img.skillist3{
+img.skillist3 {
   width: 100px;
   height: 100px;
   margin: 15px 0 10 0;
 }
-.skildiv{
+
+div.cardiv {
+  text-align: center !important;
+}
+div.skildiv {
   margin-top: 20px;
 }
+/* //////////////////////////////////////////////////////////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-@media (max-width:995px){
- 
+.timeline-section {
+  background-color: #ffff;
+  min-height: 100vh;
+  padding: 0 15 100px 15px;
+}
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #2f363e;
+  left: calc(50% - 1px);
+}
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: #2cacd5;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date {
+  font-size: 18px;
+  color: #2cacd5;
+  margin: 6px 0 15px;
+}
+.timeline-content {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+.timeline-content h3 {
+  font-size: 20px;
+  color: #2cacd5;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.timeline-content p {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+}
+@media (max-width: 995px) {
   .home {
     height: 180px;
     width: 100%;
     text-align: center;
   }
-  div.about{
+  div.about {
     height: 650px;
     margin: 0px;
     padding-left: 10;
@@ -166,25 +248,23 @@ img.skillist3{
     grid-template-columns: 1fr;
     grid-template-rows: 350px 300px;
   }
-  div.profile{
+  div.profile {
     grid-template-columns: 100%;
     grid-template-rows: 160px 1fr;
   }
-  h4.aboutme{
+  h4.aboutme {
     margin-bottom: 20px;
   }
-  p.para{
+  p.para {
     line-height: 25px;
   }
-  div.profile{
+  div.profile {
     height: 400px;
-    padding: 10px!important;
+    padding: 10px !important;
   }
-  div.skils{
+  div.skills {
     padding: 0 10px;
-    grid-template-columns:100%;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  
 }
