@@ -256,7 +256,8 @@ div.skildiv {
     margin-bottom: 20px;
   }
   p.para {
-    line-height: 25px;
+    line-height: 20px;
+  font-size: 10px;
   }
   div.profile {
     height: 400px;
@@ -267,4 +268,5 @@ div.skildiv {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+  
 }
